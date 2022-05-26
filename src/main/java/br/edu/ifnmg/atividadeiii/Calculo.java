@@ -21,7 +21,7 @@ public class Calculo {
         Double w1 = 0.0;
         Double p;
         Double diff;
-
+        //teste
         for (int i = 0; i < e; i++) {
             for (int j = 0; j < ins.size(); j++) {
                 p = w1 * ins.get(j) + w0;
@@ -29,9 +29,9 @@ public class Calculo {
                 w0 += diff * lr;
                 w1 += diff * lr * ins.get(j);
             }
-            if (i % 10 == 0) {
-                System.out.println(i + ". " + "w0 = " + w0 + " w1 = " + w1);
-            }
+//            if (i % 10 == 0) {
+//                System.out.println(i + ". " + "w0 = " + w0 + " w1 = " + w1);
+//            }
         }
 
         return new Dupla<>(w0, w1);
